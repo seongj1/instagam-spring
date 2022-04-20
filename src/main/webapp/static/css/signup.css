@@ -1,0 +1,202 @@
+
+
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 835px;
+}
+
+.item-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.item-group {
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+.b-logo {
+    margin: 22px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.b-logo img {
+    width: 175px;
+    height: 51px;
+}
+
+.signup-items {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    height: auto;
+}
+
+.signup-title {
+    margin: 0px 40px 10px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #8e8e8e;
+}
+
+.facebook-login {
+    margin: 8px 40px;
+}
+
+.facebook-login-btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 9px;
+
+    width: 268px;
+    height: 32px;
+
+    background-color: #0095f6;
+    color: white;
+}
+
+.facebook-login-btn > i {
+    margin-right: 8px;
+    font-size: 17px;
+}
+
+.signup-or {
+    margin: 10px 40px 18px;
+    width: 268px;
+}
+
+.hr-sect {
+    display: flex;
+    align-items: center;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+}
+
+.hr-sect span {
+    margin: 0px 15px;
+    line-height: 15px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.input-group {
+    margin: 0px 40px 6px;
+    display: flex;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    width: 268px;
+    height: 38px;
+}
+
+.input-data {
+    
+    position: relative;
+    width: 100%;
+    
+}
+
+.input-data label {
+    position: absolute;
+    top: 9px;
+    left: 8px;    
+    color: #8e8e8e;
+    font-weight: 200;
+    transition: 0.2s;
+}
+
+.input-data input {
+    padding: 9px 0px 7px 8px;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+    
+    width: 100%;
+    height: 36px;
+}
+
+.input-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.password-visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   margin-right: 8px;
+   white-space: nowrap;
+   cursor: pointer;
+}
+
+.input-msg > i {
+    font-size: 20px;
+    margin: 0px 8px;
+    color: rgb(240, 75, 90);
+}
+
+.submit-btn {
+    margin: 8px 40px;
+    padding: 5px 9px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 9px;
+    
+    width: 268px;
+    height: 30px;
+    
+    background-color: rgba(0, 149, 246, 0.3);
+    color: white;
+}
+
+.isuser {
+    display: inline-block;
+    margin: 15px;
+    height: 18px;
+    font-size: 14px;
+
+}
+
+.isuser > a {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #0095f6
+}
+
+.download-img {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+
+    width: 350px;
+    height: 102px;
+
+}
