@@ -30,7 +30,15 @@ public class AuthController {
 	
 	@ResponseBody
 	@RequestMapping(value = "/auth/username/check1", method = RequestMethod.GET)
-	public String usernameCheck(String username) {
+	public String usernameCheck(String username) { //Service에서 받은 boolean 자료형을 String으로 변환하여 jsp에 리턴한다.
 		return Boolean.toString(authService.checkUsername(username));
 	}
+	
+//	@ResponseBody
+//	@RequestMapping(value = "/auth/name/check1", method = RequestMethod.GET)
+//	public String nameCheck(String name) {
+//		int result = authService.checkName(name);
+//		System.out.println(result);
+//		return Integer.toString(result);
+//	}
 }
