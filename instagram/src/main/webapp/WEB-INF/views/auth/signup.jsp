@@ -8,9 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/signup.css">
+    <link rel="stylesheet" href="/app/static/css/style.css">
+    <link rel="stylesheet" href="/app/static/css/signup.css"> 
     <script src="https://kit.fontawesome.com/bb961630db.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <section class="container">
@@ -18,8 +19,8 @@
             <div class="content-box">
                 <div class="item-box">
                     <div class="item-group">
-                        <h1 class="b-logo"><img src="/static/images/logo.png"></h1>
-                        <form action="">
+                        <h1 class="b-logo"><img src="/app/static/images/instalogo.png"></h1>
+                        <form action="/app/auth/signup" method="post">
                             <div class="signup-items">
                                 <h2 class="signup-title">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
                                 <div class="facebook-login">
@@ -76,12 +77,12 @@
                         <p class="isuser">계정이 있으신가요?<a href="auth.html">로그인</a></p>
                     </div>
                     <div class="download-img">
-                        <img src="/static/images/download_img.PNG" alt="">
+                        <img src="/app/static/images/download_img.PNG" alt="">
                     </div>
                 </div>
             </div>
         </main>
     </section>
-    <script src="/static/js/signup.js"></script>
+    <script src="/app/static/js/signup.js"></script>
 </body>
 </html>

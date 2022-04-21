@@ -5,8 +5,12 @@ const phoneOrEmail_input = input_data[0].querySelector("input");
 const password_visible = document.querySelector(".password-visible");
 const submitBtn = document.querySelector('.submit-btn');
 
+let checkFlag = [false, false, false, false];
+
 submitBtn.onclick = () => {
-	document.querySelector("form").submit();
+	if(checkFlag.indexOf(false) == -1){
+	document.querySelector("form").submit();		
+	}
 }
 
 
@@ -41,11 +45,37 @@ for (let i = 0; i < input_data.length; i++){
 
     input.onblur = () => {
         const inputMsg = document.querySelectorAll(".input-msg");
+        
+        
         if (input.value.length == 0) {
             inputMsg[i].innerHTML = `<i class="fa-solid fa-circle-xmark"></i>`
+            checkFlag[i] = false;
         } else {
             inputMsg[i].innerHTML = `<i class="fa-solid fa-circle-check" style="color : #8e8e8e;"></i>`
-        }
+            checkFlag[i] = true;
+            if(i == 2){
+				$.ajax({
+					type: "get",
+					url: "/app/auth/username/check1",
+					data: { 
+						"username": input.value
+					},
+					dataType: "text",
+					success: function(data){
+						if(data == "true"){
+							inputMsg[i].innerHTML = `<i class="fa-solid fa-circle-xmark"></i>`
+							checkFlag[i] = false;
+						}else{
+							inputMsg[i].innerHTML = `<i class="fa-solid fa-circle-check" style="color : #8e8e8e;"></i>`
+							checkFlag[i] = true;
+						}
+					}
+				})
+            
+       		}
+       		
+        
+		}
     }
 
 
