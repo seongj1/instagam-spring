@@ -149,6 +149,12 @@
 		    <artifactId>mybatis</artifactId>
 		    <version>3.4.6</version>
 		</dependency>
+		<!-- jbcrypt -->
+		<dependency>
+		    <groupId>org.mindrot</groupId>
+		    <artifactId>jbcrypt</artifactId>
+		    <version>0.4</version>
+		</dependency>
 		
 		
 	</dependencies>

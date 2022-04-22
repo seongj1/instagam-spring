@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.instagram.app.domain.user.UserRepository;
+import com.instagram.app.web.dto.auth.SignupRequestDto;
 
 @Service
 public class AuthServiceImpl implements AuthService{
@@ -20,4 +21,11 @@ public class AuthServiceImpl implements AuthService{
 //	public int checkName(String name) {
 //		return userRepository.checkname(name);
 //	}
+	
+	@Override
+	public boolean signup(SignupRequestDto signupRequestDto) {
+		int result = userRepository.signup(signupRequestDto.toEntity());
+		return result != 0;
+	}
+	
 }
