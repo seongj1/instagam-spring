@@ -11,12 +11,12 @@ import com.instagram.app.domain.user.UserRepository;
 public class PrincipalServiceImpl implements PrincipalService{
 	
 	@Autowired
-	private UserRepository repository;
+	private UserRepository userRepository;
+	
 	
 	@Override
 	public User loadUserByUsername(String username) {
-		User userEntity = repository.getUserByUsername(username);
-		return userEntity;
+		return userRepository.getUserByUsername(username);
 		
 	}
 	

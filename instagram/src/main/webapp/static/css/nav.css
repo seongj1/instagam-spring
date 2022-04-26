@@ -6,6 +6,7 @@
     border-width: 0px 0px 1px;
     border-color: #dbdbdb;
     border-style: solid;
+
     background-color: white;
 }
 
@@ -13,8 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    width:  975px;
+
+    width: 975px;
     height: 60px;
 }
 
@@ -23,16 +24,17 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 100px;
-
+    width: 120px;
 }
 
 .b-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 103px;
     height: 29px;
+
     cursor: pointer;
 }
 
@@ -44,10 +46,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    padding: 0 16px;
+
+    border-radius: 7px;
+    padding: 0px 16px;
 
     height: 36px;
+
     background-color: #efefef;
 }
 
@@ -55,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 236px;
     height: 25px;
 }
@@ -72,11 +77,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 24px;
     height: 24px;
 
     overflow: hidden;
+
     cursor: pointer;
 }
 
@@ -98,8 +103,9 @@
 }
 
 .profile-img-border img {
-    width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
     
+    width: 24px;
 }
-
-

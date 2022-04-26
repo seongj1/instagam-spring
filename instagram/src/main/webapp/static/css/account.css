@@ -1,151 +1,176 @@
-.account-container {
+#container {
+    margin: 0px auto;
+
+    width: 975px;
+}
+
+article {
     display: flex;
-    margin: 30px auto 0;
-    width: 935px;
-    height: 854px;
+    margin-top: 30px;
     border: 1px solid #dbdbdb;
+    border-radius: 3px;
     background-color: white;
 }
 
-.account-nav-list {
-    
-    width: 237px;
-    height: auto;
-    border-right: 1px solid #dbdbdb;
+.side-bar {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.account-nav-list li {
+.side-bar-item {
+
+
+    padding: 16px 16px 16px 30px;
+
     width: 236px;
     height: 52px;
+
     font-size: 16px;
+    font-weight: 700;
+
     cursor: pointer;
 }
 
-.not-selected {
-    border-left: 2px solid transparent;
+
+.clicked {
+    border-left: 2px solid black;
 }
 
-.selected {
-    border-left: 2px solid #262626;
-    font-weight: 500;
-}
-
-.not-selected:hover {
-    border-left: 2px solid rgb(219, 219, 219);
-}
-
-.account-nav-list li a {
-    padding: 16px 16px 16px 30px;
-    display: block;
-    
-    width: 100%;
-    height: 100%;
-    line-height: 20px;
-    font: inherit;
-    color: #262626;
-}
-
-.account-nav-list-a-typed {
-    font-weight: 500;
-}
-
-.account-items-area {
-    width: 696px;
-    height: 852px;
-}
-
-.profile-img-change {
-    display: flex;
-    margin-top: 32px;
-    width: 696px;
-    height: 42px;
-}
-
-.profile-img-box {
-    margin: 2px 32px 0px 124px;
-}
-
-.profile-img-change img {
-    width: 38px;
-    height: 38px;
-}
-
-.profile-name-box {
-    width: 119.7px;
-    height: 42px;
-
-}
-
-.profile-name-box h1 {
-    margin-bottom: 2px;
-    font-size: 20px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-
-.profile-img-change-button {
-    border: none;
-    color: #0095f6;
-    text-align: left;
-    font-size: 14px;
-    background-color: white;
-    font-weight: 500;
-}
-
-.form-box {
+.profile-box {
     display: flex;
     flex-direction: column;
-    margin: 16px 0;
-    height: auto;
+    border-left: 1px solid #dbdbdb;
 }
 
-.introduce-input {
-    max-width: 355px;
-    min-width: 355px;
-    height: 60px;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-}
-
-.form-box > div {
+.profile-box-form1 {
     display: flex;
-
-    margin: 0px 0px 16px;
-    height: auto;
+    margin-top: 32px;
 }
 
-.form-box div div {
+.profile-box-form2 {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    margin: 16px 0px;
+}
+
+.box-items {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.box-item-left {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+    padding: 0px 32px;
     width: 194px;
 }
 
-.form-box div span {
-    margin-top: 6px;
-    padding: 0px 32px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
+.box-item-right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
 }
 
-.form-box div input {
+.profile-img-round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+    border: hidden;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.profile-img-round img {
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.input-items {
     width: 355px;
-    height: 32px;
-    border: 1px solid #dbdbdb;
+}
+
+.text-input {
+    border: 1px solid rgb(219, 219, 219);
     border-radius: 3px;
+    padding: 0px 10px;
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+}
+
+.profile-username {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.update-img-button {
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.box-item-left label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.input-explanation {
+    margin: 16px 0px 8px;
+}
+
+.explanation-text1 {
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(142, 142, 142);
+}
+
+.text-textarea {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    padding: 0px 10px;
+    width: 100%;
+    min-height: 60px;
+    max-height: 200px;
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+.phone-check-btn {
+    margin-top: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 9px;
+
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
 }
 
 .submit {
-    margin-top: 12px;
-    width: 48px;
-    height: 30px;
-    color: white;
-    background-color: rgba(0, 149, 246, 0.3);
+    margin-top: 16px;
     border: none;
-    border-radius: 4px;
-}
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 9px;
 
-.profile-img {
-    
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
 }
