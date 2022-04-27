@@ -39,7 +39,7 @@ public class AuthFilter implements Filter{
 		
 		
 		HttpSession session = httpServletRequest.getSession();
-		User user = (User)session.getAttribute("princlpal");
+		User user = (User)session.getAttribute("principal");
 		
 		String path = httpServletRequest.getRequestURI();
 		

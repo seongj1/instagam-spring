@@ -1,8 +1,6 @@
-package com.instagram.app.domain.profile;
+package com.instagram.app.web.dto.account;
 
-import java.time.LocalDateTime;
-
-import com.instagram.app.web.dto.account.AccountResponseDto;
+import com.instagram.app.domain.profile.Account;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,30 +11,28 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Account {
+public class AccountupdateReqDto {
 	private int usercode;
 	private String username;
 	private String name;
-	private String email;
-	private String phone;
-	private String img_url;
 	private String website;
 	private String introduce;
+	private String email;
+	private String phone;
 	private int gender;
-	private LocalDateTime create_date;
-	private LocalDateTime update_date;
 	
-	public AccountResponseDto toDto() {
-		return AccountResponseDto.builder()
+	public Account toEntity() {
+		return Account.builder()
 				.usercode(usercode)
 				.username(username)
 				.name(name)
-				.email(email)
-				.phone(phone)
-				.imgUrl(img_url)
 				.website(website)
 				.introduce(introduce)
+				.email(email)
+				.phone(phone)
 				.gender(gender)
 				.build();
+				
+				
 	}
 }
