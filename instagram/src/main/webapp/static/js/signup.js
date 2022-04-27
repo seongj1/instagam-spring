@@ -54,6 +54,20 @@ for (let i = 0; i < input_data.length; i++){
             inputMsg[i].innerHTML = `<i class="fa-solid fa-circle-check" style="color : #8e8e8e;"></i>`
             checkFlag[i] = true;
             if(i == 2){
+				/*$.ajax({
+					type: "get",
+					url: "/app/auth/name/check1",
+					data: {
+						"name": input.value
+					},
+					dataType: "text",
+					success: function(data){
+						if(data == "1"){
+							alert("okay")
+						}
+					}
+				})*/
+				
 				$.ajax({ //onblur 되었을 때 행동 조건
 					type: "get",
 					url: "/app/auth/username/check1",  
@@ -71,20 +85,6 @@ for (let i = 0; i < input_data.length; i++){
 						}
 					}
 				})
-				
-				/*$.ajax({
-					type: "get",
-					url: "/app/auth/name/check1",
-					data: {
-						"name": input.value
-					},
-					dataType: "text",
-					success: function(data){
-						if(data == "1"){
-							alert("okay")
-						}
-					}
-				})*/
             
        		}
        		

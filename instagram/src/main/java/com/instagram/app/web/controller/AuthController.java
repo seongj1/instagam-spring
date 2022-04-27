@@ -46,7 +46,7 @@ public class AuthController {
 		if(user != null) {
 			//session
 			HttpSession session = request.getSession();
-			session.setAttribute("principal", user);
+			session.setAttribute("princlpal", user);
 		}else {
 			//로그인 실패 메세지 전달
 			return "redirect: /app/auth/signin/error?msg=" + URLEncoder.encode("로그인 정보를 확인해 주세요.", "UTF-8");

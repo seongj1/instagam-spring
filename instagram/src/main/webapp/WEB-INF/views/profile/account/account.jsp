@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
     <link rel="stylesheet" href="/app/static/css/account.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                         <form class="profile-box-form1">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
-                                    <img src="/app/static/images/instagram.png" alt="">
+                                    <img src="images/instagram.png" alt="">
                                 </div>
                             </div>
                             <div class="box-item-right">
@@ -140,7 +140,7 @@
                                     <div class="input-items">
                                         <input type="text" id="phone" class="text-input" name="phone"
                                             value="+82 10-9473-7896">
-                                        <button type="button" class="phone-check-btn">휴대폰 번호 확인</button>
+                                        <button type="button">휴대폰 번호 확인</button>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +163,7 @@
                                 <div class="box-item-left">
                                 </div>
                                 <div class="box-item-right">
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <button type="button" class="submit">제출</button>
                                 </div>
                             </div>
                         </form>
@@ -176,7 +176,6 @@
 
         </footer>
     </section>
-    <script type="text/javascript" src="/app/static/js/principal.js"></script>
     <script type="text/javascript" src="/app/static/js/account.js"></script>
 </body>
 
