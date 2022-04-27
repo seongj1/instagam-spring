@@ -4,6 +4,15 @@ import java.time.LocalDateTime;
 
 import com.instagram.app.web.dto.account.AccountResponseDto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Account {
 	private int usercode;
 	private String username;
