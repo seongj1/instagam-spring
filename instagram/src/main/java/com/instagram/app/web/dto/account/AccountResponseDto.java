@@ -20,4 +20,3 @@ public class AccountResponseDto {
 	private String introduce;
 	private int gender;
 }
-

@@ -20,10 +20,24 @@ public class PageController {
 	@RequestMapping(value = "/auth/signup", method = RequestMethod.GET)
 	public String getSignup() {
 		return "auth/signup";
-		
 	}
+	
 	@RequestMapping(value = "/profile/account", method = RequestMethod.GET)
 	public String getAccount() {
 		return "profile/account/account";
 	}
+	
+	@RequestMapping(value = "/profile/account/password", method = RequestMethod.GET)
+	public String getAccountPassword() {
+		return "profile/account/account_password";
+	}
 }
+
+
+
+
+
+
+
+
+
