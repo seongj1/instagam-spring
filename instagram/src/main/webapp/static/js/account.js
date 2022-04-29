@@ -3,6 +3,10 @@ const textInputs = document.querySelectorAll(".text-input");
 const inctroduceText = document.querySelector(".text-textarea");
 const submitBtn = document.querySelector(".submit-btn");
 
+const profileImgFile = document.querySelector(".profile-img-file");
+const profileImgRound = document.querySelector(".profile-img-round");
+const updateImgBtn = document.querySelector(".update-img-button");
+
 let usercode = 0;
 
 let principal = getPrincipal();
@@ -78,9 +82,53 @@ function createAccount(){
 }
 
 
+profileImgRound.onclick = () => {
+	imgChange();
+}
+
+updateImgBtn.onclick = () => {
+	imgChange();
+}
 
 
+function imgChange() {
+	profileImgFile.click();
+	profileImgFile.onchange = () => {
+		let reader = new FileReader();
+		
+		reader.onload = (e) => {
+			let profileImgUrl = e.target.result;
+			let originImgUrl = profileImgRound.querySelector('img').src;
+			profileImgRound.querySelector('img').src = profileImgUrl;
+			if(confirm("프로필 이미지를 변경하시겠습니까?")){
+				let formData = new FormData(document.querySelector(".profile-box-form1"));
+				
+				$.ajax({
+					type: "post",
+					url: "/app/profile/account/update/img",
+					data: formData,
+					encType: "multipart/form-data",
+					processData: false,
+					contentType: false,
+					dataType: "text",
+					success: function(data){
+						alert("프로필 이미지가 변경되었습니다.")
+					},
+					error: function(){
+						alert("비동기 처리 오류");
+					}
+				});
+			}else{
+				profileImgRound.querySelector('img').src = originImgUrl;
+			}
+		}			
+		reader.readAsDataURL(profileImgFile.files[0]);
+	}
+	
+	
+}
 
-
-
+function showComfirm(){
+	
+}
 

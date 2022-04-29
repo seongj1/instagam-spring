@@ -56,7 +56,7 @@
                         </div>
                     </section>
                     <section class="profile-box">
-                        <form class="profile-box-form1">
+                        <form class="profile-box-form1" enctype="multipart/form-data">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
                                     <img src="/app/static/images/instagram.png">
@@ -64,6 +64,7 @@
                             </div>
                             <div class="box-item-right">
                                 <h1 class="profile-username">junil</h1>
+                                <input type="file" class="profile-img-file" name="file">
                                 <div class="update-img-button">프로필 사진 바꾸기</div>
                             </div>
                         </form>

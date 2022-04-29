@@ -83,6 +83,10 @@ article {
     max-height: 38px;
 }
 
+.profile-img-file{
+	display: none;
+}
+
 .input-items {
     width: 355px;
 }
@@ -126,6 +130,8 @@ article {
     color: #0095f6;
     font-size: 14px;
     font-weight: 500;
+    
+    cursor: pointer;
 }
 
 .box-item-left label {
