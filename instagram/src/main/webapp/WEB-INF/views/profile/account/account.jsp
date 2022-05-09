@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
     <link rel="stylesheet" href="/app/static/css/account.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +58,7 @@
                         <form class="profile-box-form1" enctype="multipart/form-data">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
-                                    <img src="/app/static/images/instagram.png">
+                                    <img src="">
                                 </div>
                             </div>
                             <div class="box-item-right">
@@ -179,7 +178,6 @@
 
         </footer>
     </section>
-    <script type="text/javascript" src="/app/static/js/principal.js"></script>
     <script type="text/javascript" src="/app/static/js/account.js"></script>
 </body>
 

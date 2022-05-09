@@ -59,7 +59,7 @@
                         <form class="profile-box-form1">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
-                                    <img src="/app/static/images/instagram.png">
+                                    <img src="">
                                 </div>
                             </div>
                             <div class="box-item-right">

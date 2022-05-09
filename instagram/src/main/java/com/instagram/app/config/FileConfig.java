@@ -1,5 +1,8 @@
 package com.instagram.app.config;
 
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class FileConfig {
-	public static String profileImgPath = "C:/seongjun/instagram_workspace/instagram_spring/instagram/fileupload/profile";
+	public static String profileImgPath = "";
 }

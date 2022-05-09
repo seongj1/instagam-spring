@@ -29,6 +29,8 @@ function load() {
 			alert("비동기 처리 오류");
 		}
 	});
+	const profileImg = profileImgRound.querySelector("img");
+	profileImg.src = getProfileImg();
 }
 
 function pageLoad(account){
@@ -113,6 +115,7 @@ function imgChange() {
 					dataType: "text",
 					success: function(data){
 						alert("프로필 이미지가 변경되었습니다.")
+						location.reload();
 					},
 					error: function(){
 						alert("비동기 처리 오류");

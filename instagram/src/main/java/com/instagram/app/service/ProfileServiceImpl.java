@@ -11,6 +11,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.instagram.app.config.FileConfig;
 import com.instagram.app.domain.profile.ProfileImg;
 import com.instagram.app.domain.profile.ProfileRepository;
 import com.instagram.app.domain.user.User;
@@ -54,8 +55,8 @@ public class ProfileServiceImpl implements ProfileService {
 		if(accountUpdateImgReqDto.getFile() != null) {
 			String imageFileName = accountUpdateImgReqDto.getFile().getOriginalFilename();
 			String tempImageFileName = UUID.randomUUID().toString().replaceAll("-", "") + "-" + imageFileName;
-			final String path = FileConfig profileImgPath;
-			Path imageFilePath = Paths.get(path + "\\" + tempImageFileName);
+			String path = FileConfig.profileImgPath;
+			Path imageFilePath = Paths.get(path + "/" + tempImageFileName);
 			
 			File file = new File(path);
 			if(!file.exists()) {

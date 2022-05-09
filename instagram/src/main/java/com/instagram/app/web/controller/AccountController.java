@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.instagram.app.auth.PrincipalService;
 import com.instagram.app.domain.user.User;
 import com.instagram.app.service.ProfileService;
-import com.instagram.app.web.dto.account.AccountPasswordReqDto;
 import com.instagram.app.web.dto.account.AccountResponseDto;
 import com.instagram.app.web.dto.account.AccountUpdateImgReqDto;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
